@@ -1,0 +1,77 @@
+
+node {
+  diameter: 50px;
+  color: #A5ABB6;
+  border-color: #9AA1AC;
+  border-width: 2px;
+  text-color-internal: #FFFFFF;
+  font-size: 10px;
+}
+
+/* 课程节点 - 深蓝色 */
+node.CourseNode {
+  color: #2E5EAA;
+  border-color: #1E3A8A;
+  text-color-internal: #FFFFFF;
+  caption: '{name}';
+  diameter: 80px;
+  font-size: 12px;
+}
+
+/* 层级1 - 基础知识 - 绿色 */
+node.Level1 {
+  color: #10B981;
+  border-color: #059669;
+  text-color-internal: #FFFFFF;
+  caption: '{name}';
+  diameter: 60px;
+}
+
+/* 层级2 - 进阶知识 - 蓝色 */
+node.Level2 {
+  color: #3B82F6;
+  border-color: #2563EB;
+  text-color-internal: #FFFFFF;
+  caption: '{name}';
+  diameter: 60px;
+}
+
+/* 层级3 - 高级知识 - 橙色 */
+node.Level3 {
+  color: #F59E0B;
+  border-color: #D97706;
+  text-color-internal: #FFFFFF;
+  caption: '{name}';
+  diameter: 60px;
+}
+
+/* 层级4 - 专家知识 - 红色 */
+node.Level4 {
+  color: #EF4444;
+  border-color: #DC2626;
+  text-color-internal: #FFFFFF;
+  caption: '{name}';
+  diameter: 60px;
+}
+
+relationship {
+  color: #A5B4FC;
+  shaft-width: 2px;
+  font-size: 10px;
+  padding: 3px;
+  text-color-external: #6B7280;
+  text-color-internal: #FFFFFF;
+  caption: '{type}';
+}
+
+relationship.PREREQUISITE_OF {
+  color: #818CF8;
+  shaft-width: 3px;
+  caption: '前置';
+}
+
+relationship.HAS_KNOWLEDGE {
+  color: #60A5FA;
+  shaft-width: 2px;
+  caption: '包含';
+}
