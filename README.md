@@ -72,40 +72,8 @@ AiedPlatform-main/
 - Node.js 和 npm
 - 可选：MySQL、Neo4j，以及兼容 OpenAI API 的大语言模型服务
 
-### 1. 启动后端
 
-```bash
-cd backend
-python -m venv .venv
-```
 
-Windows PowerShell：
-
-```powershell
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-python app.py
-```
-
-后端默认监听 `http://localhost:5000`。未配置 MySQL 时，项目使用 SQLite。
-
-### 2. 启动前端
-
-另开一个终端：
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-## ⚙️ 配置说明
-
-后端通过环境变量读取数据库、Neo4j 和模型服务配置。可在 `backend` 目录下创建本地 `.env` 文件，例如：
-
-ALI_API_KEY=your_api_key
-API_BASE=https://dashscope.aliyuncs.com/compatible-mode/v1
-```
 
 
 
